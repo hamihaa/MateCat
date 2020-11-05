@@ -256,8 +256,6 @@ abstract class viewController extends controller {
         } catch ( \Exception $exception ) {
             return null;
         }
-
-        return null;
     }
 
     /**
