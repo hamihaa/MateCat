@@ -34,8 +34,8 @@ SMTP_SENDER = 'no-reply@matecat.loc'
 SMTP_HOSTNAME = 'localhost'
 
 ; Filters Configuration
-FILTERS_ADDRESS = https://translated-matecat-filters-v1.p.mashape.com
-FILTERS_MASHAPE_KEY = Register to https://market.mashape.com/translated/matecat-filters to obtain your Mashape Key
+FILTERS_ADDRESS = https://translated-matecat-filters-v1.p.rapidapi.com
+FILTERS_API_KEY = Register to https://rapidapi.com/translated/api/matecat-filters/details to obtain your RAPIDAPI Key
 
 ; THIS SHOULD BE YOUR LEXIQA LICENSE, Request your license key at
 ; @see http://www.lexiqa.net
@@ -91,8 +91,8 @@ SMTP_SENDER = 'no-reply@matecat.loc'
 SMTP_HOSTNAME = 'localhost'
 
 ; Filters Configuration
-FILTERS_ADDRESS = https://translated-matecat-filters-v1.p.mashape.com
-FILTERS_MASHAPE_KEY = Register to https://market.mashape.com/translated/matecat-filters to obtain your Mashape Key
+FILTERS_ADDRESS = https://translated-matecat-filters-v1.p.rapidapi.com
+FILTERS_API_KEY = Register to https://rapidapi.com/translated/api/matecat-filters/details to obtain your Rapidapi Key
 
 ; THIS SHOULD BE YOUR LEXIQA LICENSE, Request your license key at
 ; @see http://www.lexiqa.net
@@ -134,8 +134,8 @@ SMTP_SENDER = 'no-reply@matecat.loc'
 SMTP_HOSTNAME = 'localhost'
 
 ; Filters Configuration
-FILTERS_ADDRESS = https://translated-matecat-filters-v1.p.mashape.com
-FILTERS_MASHAPE_KEY = Register to https://market.mashape.com/translated/matecat-filters to obtain your Mashape Key
+FILTERS_ADDRESS = https://translated-matecat-filters-v1.p.rapidapi.com
+FILTERS_API_KEY = Register to https://rapidapi.com/translated/api/matecat-filters/details to obtain your Rapidapi Key
 
 ; THIS SHOULD BE YOUR LEXIQA LICENSE, Request your license key at
 ; @see http://www.lexiqa.net

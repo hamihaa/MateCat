@@ -191,8 +191,8 @@ class INIT {
      * MateCat Filters configuration
      */
     public static $FILTERS_USER_AGENT                    = "MateCat Community Instance";
-    public static $FILTERS_ADDRESS                       = "https://translated-matecat-filters-v1.p.mashape.com";
-    public static $FILTERS_MASHAPE_KEY                   = "Register to https://market.mashape.com/translated/matecat-filters to obtain your Mashape Key";
+    public static $FILTERS_ADDRESS                       = "https://translated-matecat-filters-v1.p.rapidapi.com";
+    public static $FILTERS_API_KEY                   = "Register to https://rapidapi.com/translated/api/matecat-filters/details to obtain your Rapidapi Key";
     public static $FILTERS_SOURCE_TO_XLIFF_FORCE_VERSION = false;
     public static $FILTERS_EMAIL_FAILURES                = false;
 

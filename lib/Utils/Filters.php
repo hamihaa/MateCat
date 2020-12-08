@@ -36,9 +36,11 @@ class Filters {
                 // Useful to debug the endpoint on the other end
                 //CURLOPT_COOKIE => 'XDEBUG_SESSION=PHPSTORM'
             ];
-            if ( !empty( INIT::$FILTERS_MASHAPE_KEY ) ) {
+            if ( !empty( INIT::$FILTERS_API_KEY ) ) {
                 $options[ CURLOPT_HTTPHEADER ] = [
-                        'X-Mashape-Key: ' . INIT::$FILTERS_MASHAPE_KEY,
+                        'x-rapidapi-key: ' . INIT::$FILTERS_API_KEY,
+                        'x-rapidapi-host: translated-matecat-filters-v1.p.rapidapi.com',
+                        'content-type: multipart/form-data'
                 ];
             }
 
@@ -69,8 +71,8 @@ class Filters {
             // Compute response
             if ( $info[ 'http_code' ] != 200 || $response === false ) {
                 $errResponse = [ "isSuccess" => false, "curlInfo" => $info ];
-                if ( $response === '{"message":"Invalid Mashape Key"}' ) {
-                    $errResponse[ 'errorMessage' ] = "Failed Mashape authentication. Check FILTERS_MASHAPE_KEY in config.ini";
+                if ( $response === '{"message":"Invalid RapidAPI Key"}' ) {
+                    $errResponse[ 'errorMessage' ] = "Failed RapidAPI authentication. Check FILTERS_API_KEY in config.ini";
                 } else {
                     if ( $info[ 'errno' ] ) {
                         $errResponse[ 'errorMessage' ] = "Curl error $info[errno]: $info[error]";
