@@ -176,13 +176,13 @@ if ( ReviewExtended.enabled() || ReviewExtendedFooter.enabled()) {
             } );
         },
 
-        getSegmentRevisionIssues( segment, revisionNumber) {
+        getCurrentRevisionIssues( segment) {
             let issues = [];
             if ( segment.versions && segment.versions.length > 0 ) {
                 _.forEach(segment.versions, (version) => {
                     if ( version.issues && version.issues.length > 0 ) {
                         _.forEach(version.issues, (issue) => {
-                            if ( issue.revision_number === revisionNumber ) {
+                            if ( issue.revision_number === segment.revision_number ) {
                                 issues.push( issue );
                             }
                         });
@@ -198,7 +198,7 @@ if ( ReviewExtended.enabled() || ReviewExtendedFooter.enabled()) {
             // because of the event is triggered even on download button
             var sid = segment.sid;
 
-            let issues = this.getSegmentRevisionIssues(segment, config.revisionNumber);
+            let issues = this.getCurrentRevisionIssues(segment);
             if ( config.isReview && !segment.splitted && segment.modified && issues.length === 0) {
                 SegmentActions.openIssuesPanel({ sid: segment.sid }, true);
                 setTimeout(()=> SegmentActions.showIssuesMessage(segment.sid, 1));

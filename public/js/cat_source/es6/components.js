@@ -3,8 +3,6 @@
 // This namespace was initially intended to contain all React components,
 // but I found this is not a good practice since the dot may create troubles.
 // Underscores seem to be a better convention.
-import JobMetadata from "./components/header/cattol/JobMetadata";
-
 window.MC = {} ;
 
 window.classnames = require('classnames');
@@ -30,7 +28,7 @@ window.CatToolStore = require('./stores/CatToolStore');
 
 window.ProjectsContainer = require('./components/projects/ProjectsContainer').default;
 window.Header = require("./components/header/Header").default;
-window.JobMetadata = require("./components/header/cattol/JobMetadata").default;
+window.FilesInstructions = require("./components/header/cattol/FilesInstructions").default;
 window.AnalyzeMain = require('./components/analyze/AnalyzeMain').default;
 
 window.LanguageSelector = require('./components/languageSelector/LanguageSelector').default;
@@ -46,7 +44,7 @@ window.SuccessModal = require('./components/modals/SuccessModal').default;
 window.ConfirmRegister = require('./components/modals/ConfirmRegister').default;
 window.PreferencesModal = require('./components/modals/PreferencesModal').default;
 window.ResetPasswordModal = require('./components/modals/ResetPasswordModal').default;
-window.LoginModal = require('./components/modals/LoginModal').default;
+//window.LoginModal = require('./components/modals/LoginModal').default;
 window.ForgotPasswordModal = require('./components/modals/ForgotPasswordModal').default;
 window.RegisterModal = require('./components/modals/RegisterModal').default;
 window.ConfirmMessageModal = require('./components/modals/ConfirmMessageModal').default;
@@ -56,8 +54,6 @@ window.DQFModal = require('./components/modals/DQFModal').default;
 window.ShortCutsModal = require('./components/modals/ShortCutsModal').default;
 window.CreateTeamModal = require('./components/modals/CreateTeam').default;
 window.ModifyTeamModal = require('./components/modals/ModifyTeam').default;
-window.ModifyTeamModal = require('./components/modals/ModifyTeam').default;
-window.JobMetadataModal = require('./components/modals/JobMetadataModal').default;
 /*****/
 
 

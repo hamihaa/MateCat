@@ -20,9 +20,11 @@ class ForgotPasswordModal extends React.Component {
         this.errorFor = this.errorFor.bind(this);
     }
 
+    /*
     openLoginModal() {
         $('#modal').trigger('openlogin');
     }
+    */
 
     handleFieldChanged(field) {
         return (e) => {
@@ -101,7 +103,6 @@ class ForgotPasswordModal extends React.Component {
                onClick={this.handleSubmitClicked.bind()} tabIndex={2}><span className={"button-loader " + loaderClass}/> Send </a>
             {generalErrorHtml}
             <br/>
-            <span className="forgot-password" onClick={this.openLoginModal}>Back to login</span>
         </div>;
     }
 }

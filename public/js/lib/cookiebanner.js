@@ -237,7 +237,7 @@
                 position: 'bottom',
                 message: default_text,
                 linkmsg: default_link,
-                moreinfo: 'terms/#cookies',
+                moreinfo: 'https://taia.io/terms-and-conditions/',
                 effect: null,
                 fontSize: '14px',
                 fontFamily: 'arial, sans-serif',

@@ -65,7 +65,7 @@ $.extend(APP, {
             if ( $('.popup-tm.open').length) {
                 UI.closeTMPanel();
             }
-            APP.openLoginModal(param);
+            //APP.openLoginModal(param);
         });
 
         $('.link-manage-page').on('click', function (e) {
@@ -98,7 +98,7 @@ $.extend(APP, {
             e.preventDefault();
             e.stopPropagation();
             UI.closeTMPanel();
-            APP.openLoginModal();
+            //APP.openLoginModal();
             return false;
         } );
 
@@ -149,6 +149,7 @@ $.extend(APP, {
         }
     },
 
+    /*
     openLoginModal: function (param) {
         var title = 'Add project to your management panel';
         var style = {
@@ -170,4 +171,5 @@ $.extend(APP, {
         }
         APP.ModalWindow.showModalComponent(LoginModal, props, title, style);
     }
+    */
 });

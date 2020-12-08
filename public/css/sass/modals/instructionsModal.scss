@@ -1,5 +1,5 @@
 .instructions-modal {
-  min-height: 230px;
+  min-height: 400px;
   max-width: 900px;
   h2 {
     padding-top: 16px;
@@ -15,7 +15,6 @@
     -webkit-box-shadow: unset;
     box-shadow: unset;
     border-radius: 0px;
-    margin-bottom: 20px;
     .title {
       color:  #666;
       &:hover {
@@ -49,8 +48,7 @@
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    //min-height: 300px;
+    min-height: 300px;
     p {
       line-height: 26px;
       word-break: break-all;

@@ -1083,17 +1083,6 @@ const SegmentActions = {
         }
     },
 
-    unlockSegments(segments) {
-        AppDispatcher.dispatch({
-            actionType: SegmentConstants.SET_UNLOCKED_SEGMENTS,
-            segments
-        });
-        segments.forEach((segmentSid)=>{
-            CommonUtils.addInStorage('unlocked-' + segmentSid, true);
-        })
-
-    },
-
     setBulkSelectionInterval(from, to, fid) {
         AppDispatcher.dispatch({
             actionType: SegmentConstants.SET_BULK_SELECTION_INTERVAL,

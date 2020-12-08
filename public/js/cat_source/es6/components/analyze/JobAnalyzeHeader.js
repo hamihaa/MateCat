@@ -47,9 +47,9 @@ class JobAnalyzeHeader extends React.Component {
                     <div className="job-payable">
                         <span id="words">{parseInt(this.payable)}</span>
                         { !config.isCJK ? (
-                            " MateCat Weighted words"
+                            " Total payable words"
                         ) : (
-                            " MateCat weighted characters"
+                            " Total payable characters"
                         )}
 
                     </div>

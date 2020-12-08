@@ -23,7 +23,7 @@ body.incomingMsg header {
 
 header .wrapper {
     width: 100%;
-    background: #002b5c;
+    background: #1CAAC6;
     height: 60px;
     display: grid;
     grid-template-columns: 170px auto auto 64px;
@@ -969,7 +969,8 @@ article .approved {
 }
 
 .translated {
-    color: #fff !important
+    color: #fff !important;
+    background-color: #1CAAC6;
 }
 
 article .translated,
@@ -1085,7 +1086,7 @@ article .approved:active {
 }
 
 .topmenu-drop input.translated {
-    background: $translatedBlue;
+    background:#1CAAC6;
     color: #fff !important;
 }
 
@@ -4719,7 +4720,7 @@ header {
 
         .logo {
             margin:0;
-            background: url(../../img/logo_matecat.png) 0 0 no-repeat;
+            //background: url(../../img/logo_matecat.png) 0 0 no-repeat;
             width: 180px;
             height: 38px;
             background-size: cover;

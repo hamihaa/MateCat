@@ -86,9 +86,11 @@ class Header extends React.Component {
 		$('#modal').trigger('openpreferences');
 	}
 
+	/*
 	openLoginModal = () => {
 		$('#modal').trigger('openlogin');
 	}
+	*/
 
     updateUser = (user) => {
         this.setState({
@@ -127,12 +129,6 @@ class Header extends React.Component {
 			</div>
 				// <div className="ui user label"
 				// 		onClick={this.openPreferencesModal.bind(this)}>{config.userShortName}</div>
-		} else {
-			return <div className="ui user-nolog label" onClick={this.openLoginModal.bind(this)} title="Login">
-				{/*<i className="icon-user22"/>*/}
-				<IconUserLogout width={40} height={40} color={'#fff'} />
-			</div>
-
 		}
 	};
 
@@ -197,7 +193,7 @@ class Header extends React.Component {
 		const {teams,selectedTeamId, loggedUser} = this.state;
 
 		const userIcon = getUserIcon();
-		let containerClass = "user-teams four";
+		let containerClass = "user-teams thirteen";
 		const componentToShow = getHeaderComponentToShow();
 
 		if (showLinks) {
@@ -216,20 +212,13 @@ class Header extends React.Component {
 					{componentToShow}
 
 					<div className={containerClass + " wide column right floated"}>
-						{(showLinks) ? (
+						
 							<div>
 								<ul id="menu-site">
-									<li><a href="https://site.matecat.com/about/">About</a></li>
-									<li><a href="https://site.matecat.com/benefits/">Benefits</a></li>
-									<li><a href="https://site.matecat.com/outsourcing/">Outsource</a></li>
-									<li><a href="https://site.matecat.com/open-source/">Opensource</a></li>
-									<li><a href="https://site.matecat.com/contact-us/">Contact us</a></li>
 									{/*<li><a href="/plugins/aligner/index"  target="_blank" className={"btn btn-primary"}>Aligner</a></li>*/}
                                     { this.getMoreLinks() }
 								</ul>
 							</div>
-
-						) : ('')}
 
 						{!!showFilterProjects && <TeamSelect
 							isManage={showFilterProjects}
@@ -241,13 +230,14 @@ class Header extends React.Component {
 							selectedTeamId={selectedTeamId}
 						/>}
 						{!!isQualityReport && <ActionMenu />}
-						{/*<div className={"separator"}></div>*/}
-						{/*{!!loggedUser && !showFilterProjects && <div title="Manage" id="action-manage">*/}
-						{/*											<a className={"action-submenu"} href={'/manage'}>*/}
-						{/*												<IconManage width={'36'} height={'36'} style={{float:'right'}} />*/}
-						{/*											</a>*/}
-						{/*										</div>}*/}
 						{userIcon}
+						
+						<div>
+							<a href="https://taia.io/about-us/faq/">
+								<i className="icon-info icon" style={{fontSize:'2.5em', color:'white'}}/>
+							</a>
+						</div>
+
 					</div>
 
 				</div>

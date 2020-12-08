@@ -50,6 +50,7 @@ body.analyze{
                 position: relative;
                 width: 55% !important;
                 height: 205px;
+                text-align: left;
                 .h1 {
                     font-size: 38px;
                     font-weight: 100;
@@ -162,7 +163,7 @@ body.analyze{
                 .word-percent {
                     position: relative;
                     padding: 15px 15px 10px 20px;
-                    border: 1px solid $greenDefault;
+                    //border: 1px solid $greenDefault;
                     top: 27px;
                     font-size: 16px;
                     margin-bottom: 25px;

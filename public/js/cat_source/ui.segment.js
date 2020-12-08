@@ -217,7 +217,6 @@
                 data: {
                     action: 'setCurrentSegment',
                     password: config.password,
-                    revision_number: config.revisionNumber,
                     id_segment: id_segment.toString(),
                     id_job: config.id_job
                 },

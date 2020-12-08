@@ -69,9 +69,11 @@ class RegisterModal extends React.Component {
         return this.state.validationErrors[field];
     }
 
+    /*
     openLoginModal() {
         $('#modal').trigger('openlogin');
     }
+    */
 
     googole_popup(  ) {
         var url = this.props.googleUrl;
@@ -156,7 +158,6 @@ class RegisterModal extends React.Component {
                    onClick={this.handleSubmitClicked} tabIndex={6}><span className={"button-loader " + loaderClass}/> Register Now </a>
                 {generalErrorHtml}
                <p>
-                <a style={{cursor:'pointer'}} onClick={this.openLoginModal}>Already registered? Login</a>
                 </p>
             </div>
         </div>;
