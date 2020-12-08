@@ -90,14 +90,6 @@
         </div> <!-- .logo-menu -->
 
         <div class="link-menu">
-            <ul id="menu-site">
-                <li><a href="https://site.matecat.com/about/">About</a></li>
-                <li><a href="https://site.matecat.com/benefits/">Benefits</a></li>
-                <li><a href="https://site.matecat.com/outsourcing/">Outsource</a></li>
-                <li><a href="https://site.matecat.com/open-source/">Opensource</a></li>
-                <li><a href="https://site.matecat.com/support/">Contact us</a></li>
-                <li><a href="/plugins/aligner/index"  target="_blank" class="btn btn-primary">Aligner</a></li>
-            </ul>
         </div> <!-- .link-menu -->
 
         <div class="profile-menu">
@@ -150,6 +142,12 @@
 <!--                </a>-->
 <!--            </div>-->
             <div metal:use-macro="common.html/login_includes" />
+
+            <div>
+                <a href="https://taia.io/about-us/faq/" target="_blank">
+                    <i class="icon-info icon" style="font-size:2.5em;color:white;"/>
+                </a>
+            </div>
         </div> <!-- .profile-menu -->
 
     </div>
@@ -927,30 +925,6 @@
 </div>
 <div class="notifications-wrapper"></div>
 <footer class="normal-foo">
-    <div class="footer-body">
-        <div class="info">
-            <div class="image">
-                <img src="${basepath}public/img/Logo-Matecat.svg"/>
-            </div>
-            <div class="description">
-                MateCat is a free and open source online CAT tool. It’s free for translation companies, translators and enterprise users.
-            </div>
-        </div>
-<!--        <div class="info">-->
-<!--            <div class="image">-->
-<!--                <img src="${basepath}public/img/Logo-Translated.svg"/>-->
-<!--            </div>-->
-<!--            <div class="description">-->
-<!--                We’re a part of Translated, so if you ever need professional translation service, then go check out our-->
-<!--                <a href="https://translated.com/welcome" class="link">main site.</a>-->
-<!--            </div>-->
-<!--        </div>-->
-        <div class="side-info">
-            <div class="item"><a tal:attributes="href string:${basepath}api/docs" target="_blank">API</a></div>
-            <div class="item"><a href="https://site.matecat.com/terms/" target="_blank">Terms</a></div>
-            <div class="item"><a href="https://guides.matecat.com/" target="_blank">User Guide</a></div>
-        </div>
-    </div>
 
 </footer>
 

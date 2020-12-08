@@ -8,11 +8,11 @@
         <link rel="icon" href="${basepath}public/img/favicon.ico" />
 
         <tal:block  tal:repeat="css_url css_resources">
-            <link rel="stylesheet" tal:attributes="href css_url"></link>
+            <link rel="stylesheet" tal:attributes="href css_url"/>
         </tal:block>
 
         <div metal:use-macro="${php: INIT::$TRACKING_CODES_VIEW_PATH}/external_sources.html/header_common"/>
-
+    
         <script type="text/javascript">
             /*<![CDATA[*/
 

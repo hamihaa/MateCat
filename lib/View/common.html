@@ -58,7 +58,7 @@
     </tal:block>
 
     <tal:block  tal:repeat="css_url css_resources">
-        <link rel="stylesheet" tal:attributes="href css_url"></link>
+        <link rel="stylesheet" tal:attributes="href css_url"/>
     </tal:block>
 
 
@@ -68,9 +68,8 @@
 
 <div metal:define-macro="login_includes">
     <tal:block tal:condition="php: empty(logged_user)">
-        <div class="position-sing-in">
+        <!--div class="position-sing-in">
             <div class="ui user-nolog label open-login-modal sing-in-header" >
-                <!--<i class="icon-user22 "/>-->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
                     <path
                             fill="#09C"
@@ -82,7 +81,7 @@
                     />
                 </svg>
             </div>
-        </div>
+        </div !-->
     </tal:block>
 
     <tal:block tal:condition="php: !empty(logged_user)">
