@@ -76,9 +76,9 @@ class Log {
                 self::$fileName = implode(self::$fileName);
             }
 
-            $name = LOG_REPOSITORY . "/" . self::$fileName;
+            $name = INIT::$LOG_REPOSITORY . "/" . self::$fileName;
         } else {
-            $name = LOG_REPOSITORY . "/" . LOG_FILENAME;
+            $name = INIT::$LOG_REPOSITORY . "/" . LOG_FILENAME;
         }
 
         return $name;
