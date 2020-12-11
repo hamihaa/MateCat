@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Quality Report - MateCat</title>
+    <title>Quality Report - TAIAcat</title>
     <meta name="description" content="MateCat allows you to get more matches than any other CAT tool."/>
     <meta name="viewport" content="width=device-width"/>
     <link href="../../public/css/build/common.css?build=${build_number}" rel="stylesheet" type="text/css"/>
@@ -96,9 +96,9 @@
 
     </table>
     <div class="vote-howto">
-        <h2>How MateCat Helps Objective Quality Measurements</h2>
+        <h2>How TAIAcat Helps Objective Quality Measurements</h2>
 
-        <p>MateCat uses an analytical approach to assess quality. It sets a maximum number of tolerated issues (1
+        <p>TAIAcat uses an analytical approach to assess quality. It sets a maximum number of tolerated issues (1
             Enhancement = ${php: constant(  get_class( reviseClass )  . "::SERV_VALUE_MINOR" )} Error) and uses the data provided by the reviser to calculate an objective score.</p>
 
         <p>The level of quality can be agreed upon with your provider. For some projects "Good" or "Acceptable" may be
@@ -148,12 +148,12 @@
 
         <h3>Score Calculation</h3>
 
-        <p>MateCat uses the following formula to calculate the number of tolerated issues for the Job:</p>
+        <p>TAIAcat uses the following formula to calculate the number of tolerated issues for the Job:</p>
         <blockquote>N° of Tolerated Issues per Job = ( N° of Payable Words / ${php: number_format( constant(  get_class( reviseClass )  . "::WORD_INTERVAL" ) )} ) * N° of Tolerated Issues for ${php: number_format( constant(  get_class( reviseClass )  . "::WORD_INTERVAL" ) )}
             words
         </blockquote>
 
-        <p>For each type of issue, MateCat calculates the score this way:</p>
+        <p>For each type of issue, TAIAcat calculates the score this way:</p>
         <blockquote>N° of Issues Found / N° of Tolerated Issues per Job</blockquote>
 
         <p>The <b>Final Score</b> is the average of the single category scores.</p>
