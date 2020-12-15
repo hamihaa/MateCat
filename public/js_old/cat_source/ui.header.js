@@ -9,9 +9,9 @@ $.extend(UI, {
                 APP.fitText($('#pname-container'), $('#pname'), 25);
             });
 
-        /*if ($('#action-download').length) {
+        if ($('#action-download').length) {
 			$('#action-download').dropdown();
-		}*/
+		}
         if ($('#action-three-dots').length) {
             $('#action-three-dots').dropdown();
         }
